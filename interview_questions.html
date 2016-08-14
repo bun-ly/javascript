@@ -8,50 +8,71 @@
   </head>
   <body data-ng-controller="appCtrl">
     <div class="container">
-      <ul>
-        <li>
-          <p><strong class="question">Question: </strong>What is Javascript ?</p>
-          <div class="answer">
-            <a data-ng-click="answer1 = !answer1" data-ng-init="answer1=false">Answer</a>
-          </div>
-          <div class="card card-1 display-none" toggle-answer="answer1">
-            <p> Javascript is a client-side scripting language that can be inserted into HTML pages and is understood by web browsers.</p>
-          </div>
-        </li>
-        <li>
-          <p><strong class="question">Question: </strong>What are JavaScript types ?</p>
-          <div class="answer">
-            <a data-ng-click="answer2 = !answer2" data-ng-init="answer2=false">Answer</a>
-          </div>
-          <div class="card card-1 display-none" toggle-answer="answer2">
-            <p>Following are the JavaScript types:</p>
-            <ul>
-              <li>
-                <p>Number</p>
-              </li>
-              <li>
-                <p>String</p>
-              </li>
-              <li>
-                <p>Boolean</p>
-              </li>
-              <li>
-                <p>Function</p>
-              </li>
-              <li>
-                <p>Object</p>
-              </li>
-              <li>
-                <p>Null</p>
-              </li>
-              <li>
-                <p>Undefined</p>
-              </li>
-
-            </ul>
-          </div>
-        </li>
-      </ul>
+      <div class="card card-1">
+        <ul>
+          <li>
+            <p><strong class="question">Question: </strong>What is Javascript ?</p>
+            <div class="answer">
+              <a data-ng-click="answer1 = !answer1" data-ng-init="answer1=false">
+                <span data-ng-show="!answer1">Show answer</span>
+                <span data-ng-show="answer1">Hide answer</span>
+              </a>
+            </div>
+            <div class="card card-1 display-none" toggle-answer="answer1">
+              <p> Javascript is a client-side scripting language that can be inserted into HTML pages and is understood by web browsers.</p>
+            </div>
+          </li>
+          <li>
+            <p><strong class="question">Question: </strong>What are JavaScript types ?</p>
+            <div class="answer">
+              <a data-ng-click="answer2 = !answer2" data-ng-init="answer2=false">
+                <span data-ng-show="!answer2">Show answer</span>
+                <span data-ng-show="answer2">Hide answer</span>
+              </a>
+            </div>
+            <div class="card card-1 display-none" toggle-answer="answer2">
+              <p>Following are the JavaScript types:</p>
+              <ul>
+                <li>
+                  <p>Number</p>
+                </li>
+                <li>
+                  <p>String</p>
+                </li>
+                <li>
+                  <p>Boolean</p>
+                </li>
+                <li>
+                  <p>Function</p>
+                </li>
+                <li>
+                  <p>Object</p>
+                </li>
+                <li>
+                  <p>Null</p>
+                </li>
+                <li>
+                  <p>Undefined</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p><strong class="question">Question: </strong>What is the use of isNaN function ?</p>
+            <div class="answer">
+              <a data-ng-click="answer3 = !answer3" data-ng-init="answer3=false">
+                <span data-ng-show="!answer3">Show answer</span>
+                <span data-ng-show="answer3">Hide answer</span>
+              </a>
+            </div>
+            <div class="card card-1 display-none" toggle-answer="answer3">
+              <p>
+                isNaN function returns true if the argement is not a number otherwise it is false.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
     <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
