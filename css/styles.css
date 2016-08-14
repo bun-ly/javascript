@@ -52,6 +52,10 @@ table {
 .display-none {
     display: none;
 }
+
+.question {
+    color: #bd0a64;
+}
 .answer {
     color: #55acee;
     cursor: pointer;
